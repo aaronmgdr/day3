@@ -1,0 +1,94 @@
+body {
+	background-image: url("images/background.jpg");
+	padding:0;
+	margin:0;
+}
+
+body, h1, h2, h3, h4, h5,h6, p, a {
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+.header {
+	background-color: #eee;
+	width:100%;
+	float:left;
+	margin:0;
+	position: absolute;
+}
+nav, section {
+	width: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+.menu div {
+	float:left;
+	padding:2em 1em ;
+	font-size: 9px;
+	font-weight: 900;
+}
+
+.menu div:hover {
+	background-color: #222;
+	color: #fff;
+}
+.menu {
+	float: right;
+}
+.logo {
+	width: 150px;
+	height:auto;
+	vertical-align: center;
+	margin: 7px 0 4px 10px ;
+}
+/* end nav: stat of main */
+
+section {
+	margin: auto;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 800px
+
+}
+
+h1 {
+	color: #fff;
+	font-weight: bolder;
+	margin: 50px 10px;
+}
+
+h5 {
+	text-align: center;
+	text-transform: capitalize;
+	color: #adadad;
+	vertical-align:center;
+	font-size: .7em;
+	font-weight: 100;
+}
+figcaption {
+		vertical-align:center;
+}
+figure {
+	width:213px;
+	float:left;
+	background-color: #fff;
+	color: #666;
+	height:180px;
+	margin:10px; 
+}
+
+figure img {
+	width:100%;
+	height: 190o;
+}
+
+.redline {
+	color: red;
+	padding-right: .25em;
+}
+
+.container {
+	margin-top: 25px;
+	position: absolute;
+	width: 100%;
+	height: 800px;
+}

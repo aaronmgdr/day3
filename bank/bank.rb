@@ -9,9 +9,8 @@ class Bank
 		@balance = 0
 	end
 	
-	def zero
-		unless @balance >= 0
-			@balance -= 10.00
+	def zero?
+		@balance >= 0
 		end
 	end 
 
@@ -30,7 +29,6 @@ class Bank
 			@balance -= credit.to_f
 			puts "You withdrew $#{credit}. Your new balance is $#{@balance}"
 		else
-			zero
 			puts "NSF error "
 		end
 	end
@@ -38,10 +36,12 @@ class Bank
 		@cc += credit.to_f 
 
 	end
+
 	def pay_credit(debit)
 		@cc -=debit.to_f 
 		@balance -=debit.to_f	
 	end
+
 	def interest
 		@balance *= 1.0003
 		@cc *= 1.015 
